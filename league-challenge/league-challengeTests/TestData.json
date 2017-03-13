@@ -1,0 +1,57 @@
+{
+   "info":{
+      "message_type":"wallet",
+      "cards":[
+             {
+               "id": 1,
+               "type":"test_account_1",
+               "amount":2432.09,
+               "currency":"CAD",
+               "policy_end_date":"2017-01-01T05:00:00Z",
+               "policy_start_date":"2016-04-21T04:00:00Z"
+
+             },
+             {
+               "id": 2,
+               "type":"test_account_2",
+               "amount":999.99999,
+               "currency":"CAD",
+               "policy_end_date":"2017-01-01T05:00:00Z",
+               "policy_start_date":"2016-04-21T04:00:00Z"
+
+             },
+             {
+               "id": 3,
+               "type":"test_account_3",
+               "amount":10000,
+               "currency":"CAD",
+               "policy_end_date":"2017-01-01T05:00:00Z",
+               "policy_start_date":"2016-04-21T04:00:00Z"
+             },
+            {
+               "id": 4,
+               "type":"test_account_4",
+               "amount":203.44,
+               "currency":"CAD",
+               "policy_end_date":"2018-01-01T05:00:00Z",
+               "policy_start_date":"2017-04-21T04:00:00Z"
+             },
+             {
+               "id": 5,
+               "type":"test_account_5",
+               "amount":0,
+               "currency":"CAD",
+               "policy_end_date":"2017-01-01T05:00:00Z",
+               "policy_start_date":"2016-10-21T04:00:00Z"
+             },
+             {
+               "id": 6,
+               "type":"test_account_6",
+               "amount":123,
+               "currency":"CAD",
+               "policy_end_date":"2017-01-01T05:00:00Z",
+               "policy_start_date":"2016-10-21T04:00:00Z"
+             },
+       ]
+  }
+}

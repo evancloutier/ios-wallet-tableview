@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DQQ-9f-0nS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WalletVC-->
+        <scene sceneID="TrE-8S-ZCD">
+            <objects>
+                <tableViewController title="WalletVC" id="DQQ-9f-0nS" customClass="WalletTableViewController" customModule="league_challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="220" sectionHeaderHeight="28" sectionFooterHeight="28" id="1XK-Pr-OLI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="walletCell" rowHeight="200" id="SZT-3p-QJW" customClass="WalletTableViewCell" customModule="league_challenge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SZT-3p-QJW" id="5tG-ef-tZO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{Account Name}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5Y-Z8-e3X">
+                                            <rect key="frame" x="120" y="20" width="134.5" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{Account Balance}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNn-Ic-wC9">
+                                            <rect key="frame" x="60" y="81" width="254" height="36"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{Effective Date}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgm-9T-Uu3">
+                                            <rect key="frame" x="136" y="172.5" width="102" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dot-qG-SNN">
+                                            <rect key="frame" x="162" y="61" width="51.5" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <size key="shadowOffset" width="-1" height="-1"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="qNn-Ic-wC9" firstAttribute="centerY" secondItem="5tG-ef-tZO" secondAttribute="centerY" id="9WQ-i7-Yrw"/>
+                                        <constraint firstItem="g5Y-Z8-e3X" firstAttribute="centerX" secondItem="5tG-ef-tZO" secondAttribute="centerX" id="AC7-Mi-T0j"/>
+                                        <constraint firstItem="qgm-9T-Uu3" firstAttribute="centerX" secondItem="5tG-ef-tZO" secondAttribute="centerX" id="BRQ-lm-ArD"/>
+                                        <constraint firstItem="qNn-Ic-wC9" firstAttribute="centerX" secondItem="5tG-ef-tZO" secondAttribute="centerX" id="Rtr-lt-IEx"/>
+                                        <constraint firstItem="dot-qG-SNN" firstAttribute="centerX" secondItem="5tG-ef-tZO" secondAttribute="centerX" id="SvV-GF-pyv"/>
+                                        <constraint firstAttribute="bottom" secondItem="qgm-9T-Uu3" secondAttribute="bottom" constant="10" id="Z5M-nH-gEa"/>
+                                        <constraint firstItem="qNn-Ic-wC9" firstAttribute="top" secondItem="dot-qG-SNN" secondAttribute="bottom" constant="3" id="rXw-Qz-zvo"/>
+                                        <constraint firstItem="g5Y-Z8-e3X" firstAttribute="top" secondItem="5tG-ef-tZO" secondAttribute="top" constant="20" id="vrD-r4-o30"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="textAccount" destination="g5Y-Z8-e3X" id="Suz-7z-xK3"/>
+                                    <outlet property="textBalanceTitle" destination="dot-qG-SNN" id="9Qn-eH-9ef"/>
+                                    <outlet property="textBalanceValue" destination="qNn-Ic-wC9" id="OdM-Of-jrL"/>
+                                    <outlet property="textEffectiveDate" destination="qgm-9T-Uu3" id="8CH-UJ-M0x"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DQQ-9f-0nS" id="hWl-mg-rpx"/>
+                            <outlet property="delegate" destination="DQQ-9f-0nS" id="KWC-8P-yXe"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2wL-nw-RPj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="733.60000000000002" y="39.130434782608695"/>
+        </scene>
+    </scenes>
+</document>
